@@ -1,0 +1,25 @@
+{
+  "name": "insta-site",
+  "version": "1.0.0",
+  "description": "A personal site for instagram",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trickypr/insta-site.git"
+  },
+  "keywords": [
+    "personal-site"
+  ],
+  "author": "trickypr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trickypr/insta-site/issues"
+  },
+  "homepage": "https://github.com/trickypr/insta-site#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

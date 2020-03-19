@@ -1,0 +1,48 @@
+:root {
+  --nav-text-color: #222;
+
+  --header-text-color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+  height: fit-content;
+}
+
+.nav a {
+  float: right;
+  color: var(--nav-text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a.active {
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 1rem;
+
+  color: var(--header-text-color);
+
+  text-align: center;
+}
+
+article {
+  margin: 1rem;
+}
