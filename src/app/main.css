@@ -1,0 +1,5 @@
+@import "./variables.css";
+
+body {
+  margin: var(--page-margins);
+}

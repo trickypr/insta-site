@@ -1,0 +1,25 @@
+@import "../variables.css";
+
+#home {
+  header {
+    margin-top: var(--page-margins);
+
+    width: calc(100vw - calc(var(--page-margins) * 2));
+    height: 70vh;
+
+    background-image: url('../img/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #fbfeff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div {
+    text-align: center;
+  }
+}
