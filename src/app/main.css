@@ -1,5 +1,18 @@
 @import "./variables.css";
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: var(--page-margins);
+
+  overflow-x: hidden;
 }
+
+/* .custom-link {
+  color: black;
+  text-decoration: none;
+  border-bottom: solid yellow 2px;
+}
+
+.custom-link:hover {
+  border-bottom-width: 10px;
+} */

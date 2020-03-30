@@ -26,6 +26,7 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
     "sass": "^1.26.3",
     "typescript": "^3.8.3"
   },
@@ -33,5 +34,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
+  },
+  "staticFiles": {
+    "staticPath": "src/app/img"
   }
 }

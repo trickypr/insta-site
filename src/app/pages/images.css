@@ -1,0 +1,11 @@
+.images {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .images {
+    grid-template-columns: auto;
+  }
+}

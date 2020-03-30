@@ -5,7 +5,7 @@
     "likes": 14,
     "post_id": "B5_xnEXHPoU",
     "date": "2019-12-13T02:51:22.000Z",
-    "img": "header.jpeg"
+    "img": ["header.jpeg"]
   },
   {
     "title": "Light bending",
@@ -21,6 +21,14 @@
     "likes": 11,
     "post_id":"Bw3tk5-H2GL",
     "date":"2019-04-30T06:59:39.000Z",
-    "img": "alien_flowers.jpg"
+    "img": ["alien_flowers.jpg"]
+  },
+  {
+    "title": "Creepers", 
+    "description": "You should check out @nimmitabelbakery1 if you are passing through. They make excellent steak and pea pies.",
+    "likes": 9,
+    "post_id":"BwgOi7_HTFN",
+    "date":"2019-04-21T04:05:58.000Z",
+    "img": ["creeper.jpeg"]
   }
 ]

@@ -1,0 +1,45 @@
+#home {
+  overflow-x: hidden;
+}
+
+#home header {
+  margin-top: var(--page-margins);
+
+  width: calc(100vw - calc(var(--page-margins) * 2));
+  height: 70vh;
+
+  background-image: url("../img/header.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #fbfeff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home header div {
+  text-align: center;
+}
+
+.overlay-card {
+  --side-margins: 10vw;
+  --top-offset: -100px;
+
+  margin-top: var(--top-offset);
+
+  margin-left: var(--side-margins);
+  margin-right: var(--side-margins);
+
+  padding: 20px;
+
+  background-color: white;
+
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
+
+.overlay-card p {
+  margin: 0;
+}

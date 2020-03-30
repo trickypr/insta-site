@@ -1,8 +1,21 @@
 // eslint-disable-next-line no-unused-vars
-import React, { FC } from "react";
+import * as React from 'react'
 
-export const Images: FC = () => (
+import { ImageGridItem } from '../components/imageGridItem'
+import images from '../img/images.json'
+
+import './images.css'
+
+export const Images: React.FC = () => (
   <div>
     <h2>Heres some images</h2>
+
+    <div className="images">
+    { 
+      images.map((image, i) => (
+        <ImageGridItem key={i} image={image} />
+      ))
+    }
+    </div>
   </div>
 )
