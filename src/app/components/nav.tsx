@@ -3,12 +3,30 @@ import { Link } from 'react-router-dom'
 
 import './nav.css'
 
-export const Nav: React.FC = () => (
-  <div className="nav">
-    <div style={{float: 'left'}}><Link to="/">TrickyPR</Link></div>
+const unsortedLinks = [
+  {url: "/", text: "Home", index: 0}, 
+  {url: "/images", text: "Photos", index: 1}, 
+  {url: "/contact", text: "Contact", index: 2}
+]
 
-    <div><Link to="/contact">Contact</Link></div>
-    <div><Link to="/images">Photos</Link></div>
-    <div><Link to="/">Home</Link></div>
-  </div>
-)f
+export const Nav: React.FC = () => {
+  const [navOpen, setNavOpen] = React.useState(false)
+  const toggleNav = () => setNavOpen(!navOpen)
+
+  const list = unsortedLinks.sort((a, b) => {
+    if (navOpen) return a.index - b.index
+    else return b.index - a.index
+  }).map(({url, text}, i) => (
+    <Link to={url} key={i}>{text}</Link>
+  ))
+
+  return (
+    <div className={`nav ${navOpen ? 'responsive' : ''}`}>
+      <Link to="/" style={{float: 'left', display: navOpen ? 'none' : 'inherit'}}>TrickyPR</Link>
+
+      {list}
+
+      <a href="#" className="icon" onClick={toggleNav}><i className="fa fa-bars" /></a>
+    </div>
+  )
+}

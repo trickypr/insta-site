@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import { Images } from './images'
+import Images from './images'
 
 import './home.css'
 
-export const Home = () => (
+const Home = () => (
   <div id="home">
     <header>
       <div>
@@ -20,3 +20,5 @@ export const Home = () => (
     <Images />
   </div>
 )
+
+export default Home 

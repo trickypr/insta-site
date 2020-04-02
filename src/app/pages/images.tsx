@@ -6,7 +6,7 @@ import images from '../img/images.json'
 
 import './images.css'
 
-export const Images: React.FC = () => (
+const Images: React.FC = () => (
   <div>
     <h2>Heres some images</h2>
 
@@ -19,3 +19,5 @@ export const Images: React.FC = () => (
     </div>
   </div>
 )
+
+export default Images

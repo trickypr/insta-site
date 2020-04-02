@@ -1,0 +1,29 @@
+.img-selector {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.img-selector img {
+  width: 100%;
+}
+
+.image-data-grid {
+  display: flex;
+}
+
+.image-data-grid div {
+  color: rgb(70, 70, 70);
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.image-data-grid a {
+  color: rgb(70, 70, 70);
+  text-decoration: none;
+}
+
+.image-data-grid .svg-inline--fa {
+  color: rgb(119, 119, 119);
+  margin-right: 5px;
+  font-size: 0.9em;
+}
