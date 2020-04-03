@@ -5,7 +5,7 @@ interface imageData {
   title: string
   description: string
   likes: number
-  postID: number
+  postID: string
   date: string | Date
   img: string[]
 }
@@ -21,7 +21,7 @@ export const ImageGridItem: React.FC<image> = ({ image }) => {
 
   return (
     <a className="img-group" href={`/img/${postID}`}>
-      <div className="img" style={{ backgroundImage: `url(/app/img/${img[0]})`}} />
+      <div className="img" style={{ backgroundImage: `url(/${img[0]})`}} />
 
       <div className="info">
         <h3>{title}</h3>

@@ -26,7 +26,7 @@ interface SlideShowProps {
 
 const Slide: React.FC<SlideProps> = ({img, active}) => (
   <div className="slideshow-slide" style={{ display: active ? 'block' : 'none' }}>
-    <img src={`/app/img/${img}`} width="100%" />
+    <img src={`/${img}`} width="100%" />
   </div>
 )
 
@@ -77,7 +77,7 @@ const ImagePage: React.FC = () => {
           <>
             <h1>{possibleImage.title}</h1>
 
-            {possibleImage.img.length === 1 ? <img src={`/app/img/${possibleImage.img[0]}`} alt={possibleImage.description} style={{ width: '100%' }} /> : 
+            {possibleImage.img.length === 1 ? <img src={`/${possibleImage.img[0]}`} alt={possibleImage.description} style={{ width: '100%' }} /> : 
               <SlideShow images={possibleImage.img} />
             }
 
