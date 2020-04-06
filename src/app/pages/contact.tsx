@@ -1,7 +1,5 @@
 import * as React from 'react'
 
-import './contact.css'
-
 const ContactPage: React.FC = () => (
   <article>
     <h1>Contact</h1>
