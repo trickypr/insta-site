@@ -4,8 +4,10 @@
   "description": "A personal site for instagram",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html -p 8080",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.html -p 8080",
+    "postinstall": "npm run-script build",
+    "build": "parcel build src/index.html",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "date-fns": "^2.11.1",
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2"
